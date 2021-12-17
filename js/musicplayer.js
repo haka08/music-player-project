@@ -53,3 +53,21 @@ const formatTime = (time) => {
     return `${min}:${sec}`;
 }
 
+setInterval(()=>{
+    seekBar.value = music.currentTime;
+    currentTime.innerHTML = formatTime(music.currentTime);
+
+    if(Math.floor(music.currentTime)== Math.floor(seekBar.max)){
+        forwardBtn.click();
+    }
+}, 500)
+
+seekBar.addEventListener('change', ()=>{
+    music.currentTime = seekBar.value;
+})
+
+const playMusic = () =>{
+    music.play();
+    playBtn.classList.remove('pause');
+    disk.classList.add('play');
+}
