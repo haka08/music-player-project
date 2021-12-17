@@ -71,3 +71,15 @@ const playMusic = () =>{
     playBtn.classList.remove('pause');
     disk.classList.add('play');
 }
+
+forwardBtn.addEventListener('click',()=>{
+    if(currentMusic >= songs.length -1){
+        currentMusic = 0;
+    } else{
+        currentMusic++
+    }
+    setMusic(currentMusic);
+    playMusic();
+})
+
+
