@@ -45,3 +45,37 @@ body{
     color: hotpink;
     font-weight: 700;
 }
+
+.disk{
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-image: url('../images/1111.jpg');
+    background-size: cover;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.10);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+
+.disk.play{
+    animation-play-state: running;
+}
+
+.disk::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ECE2F0;
+    margin-left: 75px;
+}
+
