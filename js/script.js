@@ -111,5 +111,6 @@ const filterForm = document.querySelector(`#trackFilter`)
 
 const filterAndPrintTracks = function() {
 const nameSearch = filterForm.querySelector(`#searchName`).value || ``
+const maxDuration = Number(filterForm.querySelector(`#maxDuration`).value) || -1
 
           
