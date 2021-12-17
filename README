@@ -10,3 +10,4 @@ JS code for filtering was taken and altered from Rocco's classes on filtering in
 !!!!
 The music player for some reason doesn't work on the github.io page however if you download 
 the full project and use a live preview (opened in a browser) it will work perfectly.
+(possibly an issue with loading the image and audio files)
