@@ -21,3 +21,22 @@ playBtn.addEventListener('click',()=>{
     disk.classList.toggle('play');     
 })
 
+const setMusic = (i)=> {
+    seekBar.value = 0;
+    let song = songs[i];
+    currentMusic = i;
+    music.src = song.path;
+
+    songName.innerHTML = song.title;
+    artistName.innerHTML = song.artist;
+    disk.style.backgroundImage = `url('${song.cover}')`;
+
+    currentTime.innerHTML= '00:00';
+    music.addEventListener('loadeddata', () => {
+        seekBar.max = music.duration;
+        musicDuration.innerHTML = formatTime(music.duration);
+  })
+
+}
+
+setMusic(0);
