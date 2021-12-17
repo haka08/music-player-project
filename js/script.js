@@ -151,5 +151,15 @@ filterForm.querySelector(`#searchName`).addEventListener(`input`, function(event
     filterAndPrintTracks()
   })
   
+    // When there's a "change" to the "Max Price" field
+  filterForm.querySelector(`#maxDuration`).addEventListener(`change`, function(event) {
+    console.log(`change`, event.target.value)
+    filterAndPrintTracks()
+  })
+  
+  // When the document has loaded
+  window.addEventListener(`load`, function(event) {
+    filterAndPrintTracks()
+  })
 
 
