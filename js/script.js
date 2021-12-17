@@ -106,3 +106,10 @@ let songs = [
         </header>
     `
   }
+
+const filterForm = document.querySelector(`#trackFilter`)
+
+const filterAndPrintTracks = function() {
+const nameSearch = filterForm.querySelector(`#searchName`).value || ``
+
+          
