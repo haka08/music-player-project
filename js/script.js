@@ -145,3 +145,11 @@ filterForm.addEventListener(`submit`, function(event) {
   filterAndPrintTracks()
 })
 
+// When there's an "input" to the "Name" field
+filterForm.querySelector(`#searchName`).addEventListener(`input`, function(event) {
+    console.log(`input`, event.target.value)
+    filterAndPrintTracks()
+  })
+  
+
+
