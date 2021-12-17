@@ -82,4 +82,13 @@ forwardBtn.addEventListener('click',()=>{
     playMusic();
 })
 
+backwardBtn.addEventListener('click',()=>{
+    if(currentMusic <= 0){
+        currentMusic = songs.length - 1;
+    } else{
+        currentMusic--;
+    }
+    setMusic(currentMusic);
+    playMusic();
+})
 
