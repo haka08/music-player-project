@@ -112,5 +112,11 @@ const filterForm = document.querySelector(`#trackFilter`)
 const filterAndPrintTracks = function() {
 const nameSearch = filterForm.querySelector(`#searchName`).value || ``
 const maxDuration = Number(filterForm.querySelector(`#maxDuration`).value) || -1
+document.querySelector(`#tracks`).innerHTML = ``
 
+  songs
+    .filter(item => item.duration <= maxDuration || maxDuration === -1)
+    .filter(item => item.title.toUpperCase().includes(nameSearch.toUpperCase()))
+    .forEach(appendTrack)
+}
           
