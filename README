@@ -1,0 +1,8 @@
+Music player was constructed using this tutorial:
+https://youtu.be/Zf_psaJ-wP4
+
+*Used at the bottom of the page
+*JS functions are very similar, html & css needed to be changed as the tutorial
+is based off of an app structure whereas I needed it for a website structure. 
+
+JS code for filtering was taken and altered from Rocco's classes on filtering in js.
