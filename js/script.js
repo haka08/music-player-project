@@ -119,22 +119,6 @@ document.querySelector(`#tracks`).innerHTML = ``
     .filter(item => item.title.toUpperCase().includes(nameSearch.toUpperCase()))
     .forEach(appendTrack)
 }
-
-const filterForm = document.querySelector(`#trackFilter`)
-
-
-const filterAndPrintTracks = function() {
-const nameSearch = filterForm.querySelector(`#searchName`).value || ``
-const maxDuration = Number(filterForm.querySelector(`#maxDuration`).value) || -1
-
-
-document.querySelector(`#tracks`).innerHTML = ``
-
-  songs
-    .filter(item => item.duration <= maxDuration || maxDuration === -1)
-    .filter(item => item.title.toUpperCase().includes(nameSearch.toUpperCase()))
-    .forEach(appendTrack)
-}
           
 // When the <form> is submit
 filterForm.addEventListener(`submit`, function(event) {
@@ -150,7 +134,7 @@ filterForm.querySelector(`#searchName`).addEventListener(`input`, function(event
     console.log(`input`, event.target.value)
     filterAndPrintTracks()
   })
-  
+
     // When there's a "change" to the "Max Price" field
   filterForm.querySelector(`#maxDuration`).addEventListener(`change`, function(event) {
     console.log(`change`, event.target.value)

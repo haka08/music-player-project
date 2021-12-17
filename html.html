@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/musicplayer.css">
-    <script src="js/musicplayer.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/musicplayer.js" defer></script>
+    
   </head>
   <body>
     <header class="page-header">
       <h1 class="main-title">♡ Music Player ♡ </h1>
-    </header>
 
-      <!-- Filtering songs section -->
+      <!-- Filtering product form -->
       <form class="filters" name="trackFilter" id="trackFilter">
         <h2 class="filters-text">Filters</h2>
         <div class="filter-fields">
@@ -35,21 +35,19 @@
         </div>
       </form>
 
-    
       <section class="results">
         <div id="tracks" class="tracks"> </div>
       </section>
-
-  <!-- Music Player -->
+      
+<!-- Music Player -->
 
 <audio src="" id="audio"></audio>
 
 <div class="music-player">
   <h1 class="music-name">Song Name</h1>
   <p class="artist-name">artist name</p>
-</div>
 
-<div class="disk"></div>
+  <div class="disk"></div>
   <div class="song-slider">
     <input type="range" value="0" class="seek-bar">
     <span class="current-time">00:00</span>
@@ -65,24 +63,30 @@
     </button>
     &nbsp&nbsp&nbsp
     <button class="btn forward-btn"><img src="images/nxt.png" alt=""></button>
+
+
   </div>
+
+
 </div>
+
 
 <!-- Footer -->
 
-<footer class="page-footer">
-  <nav aria-label="Legal">
-    <ul class="legal">
-      <li class="legalList"><a href="#">Terms of Use</a></li>
-      <li class="legalList"><a href="#">Privacy Policy</a></li>
-      <li class="legalList"><a href="#">Accessibility Policy</a></li>
-      <li class="copyRight">&copy; Copyright 2021.</li>
-    </ul>
+    <footer class="page-footer">
+      <nav aria-label="Legal">
+        <ul class="legal">
+          <li class="legalList"><a href="#">Terms of Use</a></li>
+          <li class="legalList"><a href="#">Privacy Policy</a></li>
+          <li class="legalList"><a href="#">Accessibility Policy</a></li>
+          <li class="copyRight">&copy; Copyright 2021.</li>
+        </ul>
 
-  </nav>
-</footer>
+      </nav>
+    </footer>
 
-</body>
+    
+  </body>
 </html>
 
           

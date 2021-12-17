@@ -118,6 +118,28 @@ body{
     margin-right: 45px;
 }
 
+.controls{
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 49%;
+    padding-bottom: 30px;
+    margin-top: 2px;
+    
+}
+
+.play-btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #9778C2;
+    cursor: pointer;
+    border:none;
+    padding-top: 6%;
+    
+}
+
 .play-btn span{
     position: absolute;
     top:50%;
@@ -154,6 +176,7 @@ body{
 .play-btn.play{
     animation: pulse 2s linear infinite;
 }
+
 @keyframes pulse{
     0%{
         box-shadow: 0;
