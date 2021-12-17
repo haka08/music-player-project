@@ -118,3 +118,39 @@ body{
     margin-right: 45px;
 }
 
+.play-btn span{
+    position: absolute;
+    top:50%;
+    bottom: 25%;
+    left: 1%;
+    margin-left: 27%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 30px;
+    background: #ffffff;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.play-btn span:nth-child(2){
+    left: 30%;
+    transform-origin: center;
+}
+
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1){
+    width: 35%;
+    height: 53%;
+    transform: translate(70%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+    margin-left: 10%;
+}
+
+.play-btn.play{
+    animation: pulse 2s linear infinite;
+}
