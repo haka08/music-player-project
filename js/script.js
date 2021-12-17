@@ -138,7 +138,8 @@ document.querySelector(`#tracks`).innerHTML = ``
           
 // When the <form> is submit
 filterForm.addEventListener(`submit`, function(event) {
-
+  // Stop the form from redirecting/refreshing
+  event.preventDefault()
 
   // Collect the fields, filter, and output
   filterAndPrintTracks()
