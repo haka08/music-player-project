@@ -79,3 +79,30 @@ body{
     margin-left: 75px;
 }
 
+.song-slider{
+    width: 100%;
+    position: relative;
+    
+
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    width: 60%;
+    height: 5px;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: 45px;
+    margin-top: 11%;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px hotpink;
+
+}
+
