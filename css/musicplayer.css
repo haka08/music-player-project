@@ -154,3 +154,34 @@ body{
 .play-btn.play{
     animation: pulse 2s linear infinite;
 }
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1)
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    
+}
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
