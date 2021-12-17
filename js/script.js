@@ -91,3 +91,18 @@ let songs = [
       cover: '../images/1120.jpg'
     }
   ]
+
+  const appendTrack = function(item) {
+    document.querySelector('#tracks').innerHTML += `
+    <article class="tracks">
+        <header>
+          <img class="album-cover-image" src="images/${item.cover}" alt="${item.title}">
+          <h1 class="itemTitle">${item.title}</h1>
+          <h2 class="itemArtist">${item.artist}</h2>
+          <ul>
+            <li class="genre">${item.genre}, ${item.releaseDate}</li>
+            <li class="duration">${item.duration}</li>
+          </ul>
+        </header>
+    `
+  }
