@@ -119,4 +119,28 @@ document.querySelector(`#tracks`).innerHTML = ``
     .filter(item => item.title.toUpperCase().includes(nameSearch.toUpperCase()))
     .forEach(appendTrack)
 }
+
+const filterForm = document.querySelector(`#trackFilter`)
+
+
+const filterAndPrintTracks = function() {
+const nameSearch = filterForm.querySelector(`#searchName`).value || ``
+const maxDuration = Number(filterForm.querySelector(`#maxDuration`).value) || -1
+
+
+document.querySelector(`#tracks`).innerHTML = ``
+
+  songs
+    .filter(item => item.duration <= maxDuration || maxDuration === -1)
+    .filter(item => item.title.toUpperCase().includes(nameSearch.toUpperCase()))
+    .forEach(appendTrack)
+}
           
+// When the <form> is submit
+filterForm.addEventListener(`submit`, function(event) {
+
+
+  // Collect the fields, filter, and output
+  filterAndPrintTracks()
+})
+
